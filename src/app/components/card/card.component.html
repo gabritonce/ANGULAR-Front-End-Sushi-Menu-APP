@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem">
+  <img [src]="menuItem.img" class="card-img-top" alt="..." />
+  <div class="card-body">
+    <h5 class="card-title">{{menuItem.titolo}}</h5>
+    <p class="card-price">{{menuItem.prezzo}} €</p>
+    <button *ngIf="isOrderList == false " (click)="onAddOrder()" class="btn btn-primary">Add to my order</button>
+    <button *ngIf="isOrderList == true " (click)="onDeleteOrder()" class="btn btn-primary">Delete</button>
+  </div>
+</div>

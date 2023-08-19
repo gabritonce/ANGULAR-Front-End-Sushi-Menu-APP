@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.cdnfonts.com/css/la-oriental');
+html, body { height: 100%; }
+body { margin: 0;
+background-color:#f9d794;
+font-family: 'La Oriental', sans-serif;
+
+}
+
+.mat-mdc-snack-bar-container {
+  &.blue-snackbar {
+    --mdc-snackbar-container-color:#93c9e5;
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+  }
+}

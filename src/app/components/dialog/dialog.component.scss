@@ -1,0 +1,41 @@
+.testo{
+  text-align: center;
+  font-family: 'La Oriental', sans-serif
+}
+
+.testo h1, h3{
+  margin-top: 20px;
+}
+
+button {
+  background-color: #f9d794;
+  border: none;
+  color: #1c1c1c;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container{
+  padding: 20px;
+  font-family: 'La Oriental', sans-serif
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &:nth-child(odd){
+    background-color:#93c9e5 ;
+  }
+  img{
+    height: 50px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+
+}
+

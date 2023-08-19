@@ -1,0 +1,12 @@
+<div class="testo">
+<h1 style=" font-family: 'La Oriental', sans-serif">Order Summary</h1>
+<h3 style=" font-family: 'La Oriental', sans-serif">Total Amount: {{data.totale}} €</h3>
+<button (click)="sendOrder()">Send Order</button>
+</div>
+<div class="container" >
+<div *ngFor="let item of data.order" class="item">
+<img [src]="item.img" alt="">
+<p>{{item.titolo}}</p>
+<p>{{item.prezzo}}€ </p>
+</div>
+</div>

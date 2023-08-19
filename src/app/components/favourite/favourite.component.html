@@ -1,0 +1,16 @@
+
+<h1 class="titolo">Front-End Sushi</h1>
+
+<h1 *ngIf="orders.length > 0" id="menu">My Order</h1>
+
+<hr *ngIf="orders.length > 0">
+  <div *ngIf="orders.length > 0" class="total-shop">
+  <p>Total Amount: {{totale}}€</p>
+  <button (click)="displayOrderDialog()" class="total-button">Send Order</button>
+  </div>
+<div id="container">
+
+  <app-card *ngFor="let item of orders "[isOrderList]="true" [menuItem]="item"></app-card>
+  <h1 *ngIf="orders.length == 0">No Order Present</h1>
+
+</div>

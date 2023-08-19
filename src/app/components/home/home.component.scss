@@ -1,0 +1,27 @@
+.titolo {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Japanese Emperor", sans-serif;
+  margin-top: 30px;
+}
+
+#menu {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'La Oriental', sans-serif;
+  margin-top: 30px;
+}
+hr{
+ margin-left: 200px;
+ margin-right: 200px;
+border: 1px solid black;
+
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
