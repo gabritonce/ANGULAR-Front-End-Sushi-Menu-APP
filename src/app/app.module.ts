@@ -11,6 +11,10 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { SearchbarComponent } from './components/search-bar/searchbar/searchbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 const rotte: Route[] = [
   {
@@ -34,7 +38,8 @@ const rotte: Route[] = [
     NavbarComponent,
     CardComponent,
     SnackbarComponent,
-    DialogComponent
+    DialogComponent,
+    SearchbarComponent
 
   ],
   imports: [
@@ -42,7 +47,11 @@ const rotte: Route[] = [
     BrowserAnimationsModule,
     RouterModule.forRoot(rotte),
     MatSnackBarModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

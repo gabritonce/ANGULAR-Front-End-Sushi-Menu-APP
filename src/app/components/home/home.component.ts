@@ -9,5 +9,7 @@ import { menu } from 'src/app/constants/menuArray';
 })
 export class HomeComponent {
   menu:Menu[] = menu
-
+  result(result:string){
+    console.log(result)
+  }
 }

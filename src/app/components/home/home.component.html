@@ -1,10 +1,9 @@
-<h1 class="titolo">Front-End  Sushi</h1>
+<h1 class="titolo">Front-End Sushi</h1>
 
 <h1 id="menu">Menu</h1>
 
 <hr>
 <div id="container">
-
+  <!-- <app-searchbar (search)="result($event)"></app-searchbar> -->
   <app-card *ngFor="let item of menu " [menuItem]="item"></app-card>
 </div>
-
